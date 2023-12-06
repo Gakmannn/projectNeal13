@@ -1,0 +1,145 @@
+.container {
+    border: 1px solid grey;
+    margin: 1rem;
+}
+
+[data-tab-info] {
+    display: none;
+}
+
+.active[data-tab-info] {
+    display: block;
+}
+
+.tab-content {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+.tabs {
+    border-bottom: 1px solid grey;
+    background-color: rgb(16,153,9);
+    font-size: 25px;
+    color: rgb(0,0,0);
+    display: flex;
+    margin: 0;
+}
+
+.tabs span {
+    background: rgb(16, 153, 9);
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.tabs span:hover {
+    background: rgb(55, 219, 46);
+    cursor: pointer;
+    color: black;
+}
+
+.userRating {
+    position: relative;
+    font-family: Arial;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 100px; 
+
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+.right {
+    text-align: right;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  .bar-5 {height: 18px; background-color: #04AA6D;}
+  .bar-4 {height: 18px; background-color: #2196F3;}
+  .bar-3 {height: 18px; background-color: #00bcd4;}
+  .bar-2 {height: 18px; background-color: #ff9800;}
+  .bar-1 {height: 18px; background-color: #f44336;}
+  
+
+
+
+  .memory-game {
+    width: 660px;
+    height: 440px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 210px 210px;
+    background: #1C7CCC;
+    gap: 20px;
+    padding: 20px;
+    } 
+
+    .memory-card {
+        position: relative;
+    }
+    .flip .front-face {
+        transform: rotate3d(0, 1, 0, 0deg);
+        transition: 1s 1s;
+    }
+    .flip .back-face {
+        transform: rotate3d(0, 1, 0, 90deg);
+        transition: 1s ;
+    }
+    
+    .back-face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 5px;
+        transform: rotate3d(0, 1, 0, 0deg);
+        transition: 1s 1s;
+}
+.front-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: 1s ;
+}
